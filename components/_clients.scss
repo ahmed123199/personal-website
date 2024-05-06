@@ -1,0 +1,17 @@
+.clients__opinions {
+  grid-column: 1 / -1;
+  font-size: var(--font-size-40);
+  line-height: 1.7;
+}
+
+.clients__wrapper {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+}
+
+.clients__opinion {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}

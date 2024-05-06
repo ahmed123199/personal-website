@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  padding: 1rem 0;
+  font-size: var(--font-size-15);
+  position: relative;
+  justify-content: center;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  border-top: 0.1rem solid var(--color-input-border);
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+  top: 0;
+}

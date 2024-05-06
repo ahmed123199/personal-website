@@ -1,0 +1,45 @@
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.toggle__title {
+  font-family: var(--font-weight-medium);
+  font-size: var(--font-size-18);
+}
+
+.toggle__checkbox {
+  display: none;
+}
+
+.toggle__label {
+  display: block;
+  position: relative;
+  background-color: var(--color-black);
+  height: 2.2rem;
+  width: 4.5rem;
+  border-radius: 1.5rem;
+  padding: 0.3rem 0.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.toggle__label::after {
+  content: "";
+  display: block;
+  background-color: var(--color-white);
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle__checkbox:checked + .toggle__label {
+  background-color: var(--color-white);
+}
+
+.toggle__checkbox:checked + .toggle__label::after {
+  background-color: var(--color-green);
+  transform: translateX(2.1rem);
+}
